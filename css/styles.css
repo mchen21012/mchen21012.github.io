@@ -16,9 +16,10 @@ nav {
 }
 
 nav li {
+    margin-top: 3px;
     line-height: 10px;
     display: inline-block;
-    margin-right: 20px;
+    margin-right: 35px;
 }
 
 #nav-bar-writing .nav {
@@ -36,7 +37,8 @@ a:hover {
 }
 
 #default {
-    margin-left: -400px;
+    margin-left: -350px;
+    margin-top: 3px;
     font-size: 20px;
     font-weight: 800;
     float: left;
