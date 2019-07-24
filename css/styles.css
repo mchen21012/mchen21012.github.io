@@ -20,6 +20,7 @@ nav li {
     line-height: 10px;
     display: inline-block;
     margin-right: 35px;
+    font-size: 18px;
 }
 
 #nav-bar-writing .nav {
@@ -179,6 +180,34 @@ p {
     padding: 20px 50px 50px 50px;
 }
 
+#teaching-exp-container h2, #programming-exp-container h2 {
+    font-size: 35px;
+}
+
 #writing-container {
     text-align: center;
 }
+
+@media only screen and (max-width: 400px) {
+    nav li {
+      margin-right: 10px;
+      font-size: 12px;
+    }
+
+    button {
+        width: 250px;
+    }
+
+    #about-me-btn {
+        font-size: 15px;
+        width: 200px; 
+    }
+
+    #who-am-i-container {
+        height: 885px;
+    }
+
+    #programming-intro h1 {
+        font-size: 45px;
+    }
+  }
