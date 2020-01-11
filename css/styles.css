@@ -13,13 +13,18 @@ nav {
     height: 50px;
     padding-top: 4px;
     color: white;
-    border-bottom: 1.5px solid black;
+    border-bottom:
+    1.5px solid black;
     width: 100%;
 }
 
 .nav {
     display: flex;
     justify-content: center;
+}
+
+nav ul {
+    padding: 0;
 }
 
 nav li {
@@ -57,7 +62,7 @@ a {
 }
 
 #default {
-    margin-left: -350px;
+    margin-left: -300px;
     /* margin-top: 3px; */
     font-size: 20px;
     font-weight: 800;
@@ -224,13 +229,65 @@ p {
     padding: 20px 50px 50px 50px;
 }
 
+#programming-exp-container ul, #teaching-exp-container ul {
+    margin-top: 5px;
+}
+
 #teaching-exp-container h2, #programming-exp-container h2 {
     font-size: 40px;
+}
+
+#game-aside {
+    margin-left: 25px;
+    font-size: 20px;
 }
 
 #writing-container {
     text-align: center;
     padding: 20px 50px 50px 50px;
+}
+
+#game-intro {
+    background-color: black;
+    text-align: center;
+    padding: 20px 50px 50px 50px;
+}
+
+#game-intro h1, #game-intro h2 {
+    color: white;
+    margin-bottom: 0;
+}
+
+#game-container {
+    text-align: center;
+}
+
+#game-feedback {
+    text-align: center;
+    background-color: rgb(160, 0, 0);
+    color: white;
+    padding: 20px 50px 50px 50px;
+}
+
+#game-feedback p {
+    margin-bottom: 0;
+}
+
+#feedback-btn {
+    width: 250px;
+}
+
+.added-text {
+    color: white;
+    font-size: 20px;
+}
+
+#non-mobile {
+    font-weight: 200;
+}
+
+#game-link {
+    color: rgb(160,0,0);
 }
 
 #intro_img {
@@ -244,9 +301,8 @@ p {
     height: 400px;
 }
 
-#zenithia1 {
+#cs3110-midterm {
     margin-left: 25px;
-    margin-right: 50px;
 }
 
 img {
@@ -302,6 +358,51 @@ footer {
     margin-left: 30px;
 }
 
+#slideshow-container {
+    display: flex;
+    align-items: center;
+}
+
+#next, #back {
+    width: 40px;
+    font-size: 50px;
+    height: 100px;
+    color: black;
+    background-color: white;
+}
+
+#next:hover, #back:hover {
+    color:rgb(243, 0, 41);
+    ;
+}
+
+#next {
+    margin-left: 5px;
+}
+
+#back {
+    margin-right: 5px;
+}
+
+/* adapted from https://www.w3schools.com/howto/howto_js_slideshow.asp */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.2s;
+    animation-direction: alternate;
+    animation-name: fade;
+    animation-duration: 1.2s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .7}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .7}
+    to {opacity: 1}
+  }
+
 @media only screen and (max-width: 430px) {
     nav li {
       margin-right: 9px;
@@ -342,20 +443,17 @@ footer {
         height: 210px;
     }
 
+    #cs3110-midterm {
+        width: 200px;
+        height: 210px;
+    }
+
     #about-container, #intro-container, #programming-exp-container, #teaching-exp-container, #writing-container {
         padding: 15px;
     }
 
     #writing-btn {
         width: 280px;
-    }
-
-    #zenithia1, #zenithia2 {
-        width: 200px;
-    }
-
-    #zenithia2 {
-        margin-left: 25px;
     }
 
     #linkedin-icon {
@@ -414,6 +512,11 @@ footer {
         height: 450px;
     }
 
+    #cs3110-midterm {
+        width: 415px;
+        height: 250px;
+    }
+
     #about-container, #intro-container, #programming-exp-container, #teaching-exp-container, #writing-container {
         padding: 15px;
     }
@@ -422,22 +525,14 @@ footer {
         width: 280px;
     }
 
-    #zenithia1, #zenithia2 {
-        width: 230px;
-    }
-
-    #zenithia2 {
-        margin-left: 25px;
-    }
-
     #default {
         display: none;
     }
   }
  
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1300px) {
     #default {
-        margin-left: -200px;
+        display: none;
     }
 
     #who-am-i {
